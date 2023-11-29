@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hot Beans </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      
+    </head>
+    <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="staff.html" class="w3-bar-item w3-button">staff</a>
+  <a href="vacancies.html" class="w3-bar-item w3-button">Application form</a>
+  <a href="#" class="w3-bar-item w3-button">Job specifications</a>
+</div>
+<body>
+  <!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>Hot Beans </h1>
+       
+  </div>
+</div>
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+  <div>
+  
+  
+  <style>
+    .mySlides {display:internal}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+    <body>
+    
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="https://images.ctfassets.net/pdf29us7flmy/2ZtlOujWNf4ztl5wbRnTpC/4a394c414c6a2e3f68749802e5e4d042/GettyImages-689291632_optimized.jpg?w=720&q=100&fm=jpg">
+    <img class="mySlides" src="https://www.lighthouselabs.ca/uploads/post/open_graph_image/408/Person-Coding-On-Computer.jpg">
+    <img class="mySlides" src="https://www.mooc.org/hubfs/basic-work-from-home-setup-jpg.jpeg">
+    <div class="w3-center w3-display-side" style="width:10%">
+      <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+      <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+</div>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+  <h1>Hot Beans is a dynamic and innovative web development company that stands out in the ever-evolving digital landscape. With a passion for turning ideas into captivating online experiences, Hot Beans takes a fresh approach to web development, blending creativity with cutting-edge technology. The company's team of skilled developers, designers, and strategists work collaboratively to deliver bespoke solutions tailored to meet the unique needs of each client. Whether it's crafting visually stunning websites, optimizing user experiences, or developing robust e-commerce platforms, Hot Beans combines technical expertise with a keen understanding of market trends. With a commitment to excellence, Hot Beans is not just a web development company; it's a partner in transforming digital visions into reality, one innovative project at a time.
+
+
+
+
+
+  </h1>
+  </body>
+
+
+</body>
+</html>
